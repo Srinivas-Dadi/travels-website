@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@300;400;600&family=Roboto+Mono:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html{
+    background-color: #333;
+    overflow-x: hidden ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #181818;
+    padding: .2vw 3vw;
+    align-items: center;
+    gap: 3vw;
+}
+
+nav img{
+    aspect-ratio: 1/1;
+    width: 5vw;
+}
+
+.nav-list-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 2vw;
+    
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    text-align: center;
+    width: 60%;
+    list-style: none;
+    padding: .3vw;
+    font-size: 1vw;
+}
+
+.nav-list-menu a{
+    color: #181818;
+    text-decoration: none;
+    background-color: #E8CD42;
+    border-radius: 5px;
+    padding: .5vw;
+    font-size: 1vw;
+    justify-content: center;
+}
+
+
+.header{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; */
+    display: grid;  
+    grid-gap: 3vw;  
+    grid-template-columns: repeat(auto-fit, 650px);
+    text-align: center;
+    justify-content: center;
+    padding: 3vw 3vw;
+    
+}
+
+.head-text{
+    text-align: center;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction:column;
+    gap: 1vw;
+    justify-content: center;
+    color: #E8CD42;
+    font-size: 1.3vw;
+    
+}
+
+.head-text h3{ 
+    color: whitesmoke;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;    
+}
+
+.head-text a{
+    background-color: #E8CD42;
+    color: black;
+    border-radius: 5px;
+    width: max-content;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: .3vw 1.5vw;
+    margin: 3vw 0vw;
+}
+
+
+.head-img{
+    background-image: radial-gradient(#E8CD42,#e8cc4239,#33333384,#333);
+    display: flex;
+    justify-content: center;
+}
+
+.head-img img{
+    width: 50vw;
+}
+
+.services h1,.cars h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.service-cards{
+    display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, 430px);
+    /* grid-template-rows: repeat(2, 100px);  */
+    align-items: center;
+    justify-content: center;
+    padding: 7vw 2vw;
+}
+
+.blue{
+    color: #49DBFC;
+}
+
+.yellow{
+    color: #E8CD42;
+}
+
+.service-card{
+    width: 335px;
+    border-radius: 20px;
+    color: whitesmoke;
+    padding: 2vw 2.5vw;
+    /* border: 2px dashed;
+    border-image-source: linear-gradient(-30deg,whitesmoke,#333 ,#333,whitesmoke);
+    border-image-slice: 1;
+    box-sizing: border-box; */
+    border: 2px dashed #333;
+  background:
+  linear-gradient(#333 0 0) padding-box,
+linear-gradient(147deg, whitesmoke, #333 31.09%, #333 50.42%, #333 72.69%, whitesmoke) border-box;
+}
+
+.service-card-head{
+    text-align: left;
+    gap: 2vw;
+    margin: .5vw 0vw;
+    margin-bottom: 1vw;
+    color: #49DBFC;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.service-card-head{
+    font-size: 15px;
+}
+
+.card-text{
+    font-size: 12px;
+}
+
+.cars{
+    justify-content: center;
+}
+
+.card-grid {
+    display:inline-block;
+    text-align: center;
+    margin: 3vw 0vw;
+}
+
+.broucher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* background-image: -webkit-radial-gradient(#49DBFC,#333 ,#333); */
+    padding: 2vw;
+    place-items: center;
+    color: white;
+    gap: .5vw;
+}
+
+.broucher a{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    width: max-content;
+    padding: .5vw;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+.broucher img{
+    background: -webkit-radial-gradient(#49dbfc, #333 42.02%, rgb(51, 51, 51) 55.46%, #333);
+    width: 80vw;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    justify-content: center;
+    text-align: center;
+    grid-gap: 2vw;
+    background-color: #181818;
+    padding: 4vw 0vw 4vw 0vw;
+    color: whitesmoke;
+}
+
+.company img{
+    width: 120px;
+}
+
+.contact h2, .social h2, .address h2{
+    color: #49dbfc;
+}
+
+.contact, .social{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.imgs{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.social img{
+    aspect-ratio: 1/1;
+    width: 50px;
+}
+
+.foot-text{
+    color: #E8CD42;
+}
+
+.copy{
+    background-color: #181818;
+    color: whitesmoke;
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+.copy hr{
+    /* background-image: linear-gradient(90deg, red, transparent); */
+    color: red;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .html{
+        overflow-x: hidden;
+    }
+
+    nav{
+        height: 35px;
+        padding: 0.2vw 6vw;
+    }
+
+    nav img{
+        width: 30px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+    .nav-list-menu{
+        display: contents;
+        place-items: right;
+    }
+
+    .nav-list-menu a{
+        font-size: 1.5vw;
+    }
+
+    .header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head-img{
+        background-image: radial-gradient(#e8cd42, #e8cc4239 17.65%, #33333384 40.34%, #333);
+    }
+
+    .service-cards{
+        place-items: center;
+    }
+
+    .service-card{
+        width: 280px;
+    }
+    .services h1,.cars h1{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    .card-grid img{
+        width: 280px;
+    }
+
+    .broucher a{
+        text-decoration: none;
+        color: black;
+        background-color: yellow;
+        width: max-content;
+        padding: .5vw 1vw;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+
+    footer{
+        gap: 3vw;
+    }
+
+    .social,.contact{
+        gap: 6px;
+    }
+
+    .social h2,.contact h2{
+        font-size: 3vw;
+    }
+
+    .company p, .contact-det p{
+        font-size: 2.5vw;
+    }
+
+    .imgs img{
+        width: 25px;
+    }
+
+}
