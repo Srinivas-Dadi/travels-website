@@ -109,7 +109,7 @@ nav img{
 }
 
 .head-img img{
-    width: 50vw;
+    width: 90vw;
 }
 
 .services h1,.cars h1{
@@ -303,7 +303,7 @@ footer{
     }
 
     .head-text a{
-        font-size: 2vw;
+        font-size: 3.5vw;
     }
 
     .head-img{
